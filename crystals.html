@@ -70,37 +70,6 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="assets/javascript/game.js">
-
-var targetNumber = "";
-var wins = 0;
-var losses = 0;
-var counter = 0;
-var images = [".assets/images/crystal-blue.png", "./assets/images/Crystal-Purple.png", "./assets/images/Crystal-Red.png", "./assets/images/Crystal-Yellow.png"];
-
-function randomTargetNumber () {
-    targetNUmber = Math.floor(math.random() * 102) + 19;
-}
-
-function resetCrystals () {
-    for (var i=0; i< images.length; i++) {
-        var crystal = $("<img>");
-        crystal.addClass("crystal");
-        crystal.attr("src", images[i]);
-        crystal.attr("value", (math.floor(math.random() * 12) + 1));
-        crystal.attr("height", "100");
-        $(".crystal-images").append(crystal);
-    }
-
-    function totalReset () {
-        randomTargetNumber ();
-        counter = 0;
-        resetHTML ();
-        resetCrystals ();
-    }
-
     
-}
-</script>
 </body>
 </html>
